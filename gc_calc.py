@@ -9,3 +9,6 @@ def gc(sequence):
         total_count += 1
 
     return (float(gc_count) / total_count)
+
+def do_nothing():
+    return "Reduce test coverage"
