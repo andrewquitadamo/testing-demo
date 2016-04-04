@@ -8,6 +8,8 @@ class GcTests(unittest.TestCase):
         self.assertRaises(TypeError, gc, )
     def test_long(self):
         self.assertAlmostEqual(gc('ACTGCAGATCTGAAATTCAGTAAGGG'), 0.4230769)
+    def test_do_nothing(self):
+        self.assertEqual(do_nothing(), "Reduce test coverage")
 
 if __name__ == '__main__':
     unittest.main()
